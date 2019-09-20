@@ -10,14 +10,16 @@ namespace HelloGItApp {
 
             //Console.WriteLine("My first git project!");
             //Console.WriteLine("Press ENTER to exit");
-
-            List<int> lista = new List<int>();
+            try {
+                List<int> lista = new List<int>();
 
             int eddig = 10;
             int legnagyobb = 0;
             int legkisebb = 999999999;
+            
 
-            Console.WriteLine("Kérem adja meg hány számot szeretne megadni: ");
+            
+            Console.WriteLine("Kérem adja meg hány számot szeretne megadni: ");            
             eddig = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < eddig; i++) {
@@ -28,6 +30,8 @@ namespace HelloGItApp {
             }
 
             
+
+
             for (int i = 0; i < lista.Count; i++) {
                 if (lista[i]>legnagyobb) {
                     legnagyobb = lista[i];
@@ -44,7 +48,11 @@ namespace HelloGItApp {
 
 
 
-
+            }
+            catch (Exception) {
+                Console.WriteLine("Hülye vagy, számot adjál már meg!");
+                //throw;
+            }
 
 
 
