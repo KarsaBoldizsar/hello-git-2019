@@ -15,6 +15,7 @@ namespace HelloGItApp {
 
             int eddig = 10;
             int legnagyobb = 0;
+            int legkisebb = 999999999;
 
             Console.WriteLine("Kérem adja meg hány számot szeretne megadni: ");
             eddig = Convert.ToInt32(Console.ReadLine());
@@ -31,10 +32,15 @@ namespace HelloGItApp {
                 if (lista[i]>legnagyobb) {
                     legnagyobb = lista[i];
                 }
+                if (lista[i]<legkisebb) {
+                    legkisebb = lista[i];
+                }
             }
 
-            Console.WriteLine("A legnagyobb szám a {0}", legnagyobb);
             
+
+            Console.WriteLine("A legnagyobb szám a {0}", legnagyobb);
+            Console.WriteLine("A legkisebb szám a {0}", legkisebb);
 
 
 
