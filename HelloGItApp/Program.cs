@@ -16,7 +16,8 @@ namespace HelloGItApp {
             int eddig = 10;
             int legnagyobb = 0;
 
-            
+            Console.WriteLine("Kérem adja meg hány számot szeretne megadni: ");
+            eddig = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < eddig; i++) {
                 Console.WriteLine("Kérem adjon meg egy számot: ");
